@@ -1,0 +1,11 @@
+{
+  "name": "fileToBase64",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "encode": "node encode.js",
+    "decode": "node decode.js",
+    "encode-windows": "certutil -encode .env tmp.b64 && findstr /v /c:- tmp.b64 > data.b64 && del tmp.b64"
+  }
+}
